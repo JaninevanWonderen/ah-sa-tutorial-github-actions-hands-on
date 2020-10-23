@@ -25,6 +25,9 @@ jobs:
       - name: Run iets
         run: pip install -e .[dev]
         
+      - name: run precommit
+        run: pre-commit      
+        
       - name: Run tests
         run: pytest tests
       

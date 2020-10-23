@@ -34,7 +34,8 @@ jobs:
         run: pre-commit install
         
       - name: run precommit
-        run: pre-commit   
+        run: pre-commit run --all-files 
+        continue-on-error: false  
         
       - name: Run pytests
         run: pytest

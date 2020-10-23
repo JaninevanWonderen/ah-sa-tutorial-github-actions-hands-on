@@ -30,6 +30,9 @@ jobs:
       - name: Run iets
         run: pip install -e ".[dev]"
         
+      - name: Run precommit install
+        run: pre-commit install
+        
       - name: run precommit
         run: pre-commit      
         
